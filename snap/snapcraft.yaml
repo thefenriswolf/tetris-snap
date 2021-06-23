@@ -16,6 +16,7 @@ parts:
         source-commit: e3605d48f3ada54da991257920b6a139d9374ddf
         override-build: |
           mkdir -p $SNAPCRAFT_PART_INSTALL/bin/
+          stack upgrade --binary-only
           stack update
           stack install --local-bin-path $SNAPCRAFT_PART_INSTALL/bin/
           chmod +x $SNAPCRAFT_PART_INSTALL/bin/tetris
