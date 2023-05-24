@@ -1,6 +1,6 @@
 name: tetris-thefenriswolf
 base: core20
-version: '0.1.4.1'
+version: '0.1.4.2'
 summary: A terminal interface for tetris
 description: |
   A terminal interface for tetris written in Haskell
@@ -13,7 +13,7 @@ parts:
         plugin: nil
         source: https://github.com/samtay/tetris.git
         source-type: git
-        source-commit: e3605d48f3ada54da991257920b6a139d9374ddf
+        source-commit: 25560e51db05ad8cce9f7ed58ab449ed3ec9e0dd
         override-build: |
           mkdir -p $SNAPCRAFT_PART_INSTALL/bin/
           stack upgrade --binary-only
